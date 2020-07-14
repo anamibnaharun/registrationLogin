@@ -15,7 +15,7 @@ router.post('/register',(req,res,next)=>{
     user.save()
     .then(()=>{
         console.log('saved to the database');
-    res.redirect('/');
+        res.redirect('/login');
     })
     .catch(err=>{
         console.log(err);

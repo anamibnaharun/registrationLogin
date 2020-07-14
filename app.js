@@ -24,7 +24,7 @@ app.use(errorRoute);
 
 
 app.use('/',(req,res)=>{
-    res.send('The server is running at port 8080');
+    res.redirect('/register');
 })
 
 mongoose.connect('mongodb+srv://anamibnaharun:2VEehUb6GhY37Aa@project1.mhzsa.mongodb.net/<dbname>?retryWrites=true&w=majority',
